@@ -1,0 +1,7 @@
+add_test([=[UnitaryTest.MeshTest]=]  /home/racha/TD2_POO/build/UnitTests [==[--gtest_filter=UnitaryTest.MeshTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UnitaryTest.MeshTest]=]  PROPERTIES WORKING_DIRECTORY /home/racha/TD2_POO/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[UnitaryTest.ProblemTest]=]  /home/racha/TD2_POO/build/UnitTests [==[--gtest_filter=UnitaryTest.ProblemTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UnitaryTest.ProblemTest]=]  PROPERTIES WORKING_DIRECTORY /home/racha/TD2_POO/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[MainFunctionTest.EquationTest]=]  /home/racha/TD2_POO/build/UnitTests [==[--gtest_filter=MainFunctionTest.EquationTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MainFunctionTest.EquationTest]=]  PROPERTIES WORKING_DIRECTORY /home/racha/TD2_POO/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  UnitTests_TESTS UnitaryTest.MeshTest UnitaryTest.ProblemTest MainFunctionTest.EquationTest)

@@ -1,0 +1,5 @@
+if(EXISTS "/home/racha/TD2_POO/build/UnitTests[1]_tests.cmake")
+  include("/home/racha/TD2_POO/build/UnitTests[1]_tests.cmake")
+else()
+  add_test(UnitTests_NOT_BUILT UnitTests_NOT_BUILT)
+endif()
