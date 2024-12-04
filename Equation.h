@@ -31,6 +31,9 @@ public:
 
     // Méthode pour imposer les conditions aux limites
     void compute_boundary_conditions(Variable& variable, double T1, double T2);
+    void compute_exact_solution(Variable& u_ref, IMesh* mesh, double T1, double T2);
+    
+
 };
 
 #endif // EQUATION_H

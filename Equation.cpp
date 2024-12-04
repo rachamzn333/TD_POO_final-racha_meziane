@@ -33,6 +33,13 @@ void Equation::compute(const Variable& u_k, Variable& u_kp1, IMesh* mesh) {
         u_kp1[i] = 0.5 * (u_k[i - 1] + u_k[i + 1]);
     }
 }
+void Equation::compute_exact_solution(Variable& u_ref, IMesh* mesh, double T1, double T2) {
+    for (int i = 0; i < mesh->x_size(); ++i) {
+        double x = mesh->x_i(i);  // Position x_i dans le maillage
+        u_ref[i] = (T2 - T1) * x + T1;  // Calcul de la solution exacte
+    }
+}
+
 
 
 // Autres méthodes comme compute_initial_condition et compute_boundary_conditions...
