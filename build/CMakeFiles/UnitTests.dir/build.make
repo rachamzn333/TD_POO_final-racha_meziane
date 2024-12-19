@@ -153,6 +153,20 @@ CMakeFiles/UnitTests.dir/UniformMesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/UnitTests.dir/UniformMesh.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/racha/TD2_POO/UniformMesh.cpp -o CMakeFiles/UnitTests.dir/UniformMesh.cpp.s
 
+CMakeFiles/UnitTests.dir/Timer.cpp.o: CMakeFiles/UnitTests.dir/flags.make
+CMakeFiles/UnitTests.dir/Timer.cpp.o: /home/racha/TD2_POO/Timer.cpp
+CMakeFiles/UnitTests.dir/Timer.cpp.o: CMakeFiles/UnitTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/racha/TD2_POO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/UnitTests.dir/Timer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/UnitTests.dir/Timer.cpp.o -MF CMakeFiles/UnitTests.dir/Timer.cpp.o.d -o CMakeFiles/UnitTests.dir/Timer.cpp.o -c /home/racha/TD2_POO/Timer.cpp
+
+CMakeFiles/UnitTests.dir/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/UnitTests.dir/Timer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/racha/TD2_POO/Timer.cpp > CMakeFiles/UnitTests.dir/Timer.cpp.i
+
+CMakeFiles/UnitTests.dir/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/UnitTests.dir/Timer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/racha/TD2_POO/Timer.cpp -o CMakeFiles/UnitTests.dir/Timer.cpp.s
+
 # Object files for target UnitTests
 UnitTests_OBJECTS = \
 "CMakeFiles/UnitTests.dir/test/test_uniform_mesh.cpp.o" \
@@ -160,7 +174,8 @@ UnitTests_OBJECTS = \
 "CMakeFiles/UnitTests.dir/test/test_equation.cpp.o" \
 "CMakeFiles/UnitTests.dir/Problem.cpp.o" \
 "CMakeFiles/UnitTests.dir/Equation.cpp.o" \
-"CMakeFiles/UnitTests.dir/UniformMesh.cpp.o"
+"CMakeFiles/UnitTests.dir/UniformMesh.cpp.o" \
+"CMakeFiles/UnitTests.dir/Timer.cpp.o"
 
 # External object files for target UnitTests
 UnitTests_EXTERNAL_OBJECTS =
@@ -171,12 +186,13 @@ UnitTests: CMakeFiles/UnitTests.dir/test/test_equation.cpp.o
 UnitTests: CMakeFiles/UnitTests.dir/Problem.cpp.o
 UnitTests: CMakeFiles/UnitTests.dir/Equation.cpp.o
 UnitTests: CMakeFiles/UnitTests.dir/UniformMesh.cpp.o
+UnitTests: CMakeFiles/UnitTests.dir/Timer.cpp.o
 UnitTests: CMakeFiles/UnitTests.dir/build.make
 UnitTests: lib/libgtest.a
 UnitTests: lib/libgtest_main.a
 UnitTests: lib/libgtest.a
 UnitTests: CMakeFiles/UnitTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/racha/TD2_POO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable UnitTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/racha/TD2_POO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable UnitTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UnitTests.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -D TEST_TARGET=UnitTests -D TEST_EXECUTABLE=/home/racha/TD2_POO/build/UnitTests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/racha/TD2_POO/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=UnitTests_TESTS -D CTEST_FILE=/home/racha/TD2_POO/build/UnitTests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
 

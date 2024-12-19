@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -isystem /home/racha/TD2_POO/build/_deps/googletest-src/googletest/include -isystem /home/racha/TD2_POO/build/_deps/googletest-src/googletest
 
-CXX_FLAGS = -std=gnu++14
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14
 

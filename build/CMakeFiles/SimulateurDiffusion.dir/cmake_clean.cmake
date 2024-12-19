@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SimulateurDiffusion.dir/Equation.cpp.o.d"
   "CMakeFiles/SimulateurDiffusion.dir/Problem.cpp.o"
   "CMakeFiles/SimulateurDiffusion.dir/Problem.cpp.o.d"
+  "CMakeFiles/SimulateurDiffusion.dir/Timer.cpp.o"
+  "CMakeFiles/SimulateurDiffusion.dir/Timer.cpp.o.d"
   "CMakeFiles/SimulateurDiffusion.dir/UniformMesh.cpp.o"
   "CMakeFiles/SimulateurDiffusion.dir/UniformMesh.cpp.o.d"
   "CMakeFiles/SimulateurDiffusion.dir/main.cpp.o"

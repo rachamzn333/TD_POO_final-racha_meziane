@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 11)
 enable_testing()
 
 # Ajout de l'exécutable principal
-add_executable(SimulateurDiffusion main.cpp Problem.cpp Equation.cpp UniformMesh.cpp)
+add_executable(SimulateurDiffusion main.cpp Problem.cpp Equation.cpp UniformMesh.cpp Timer.cpp)
 
 # Ajout du test d'intégration
 add_test(NAME structure_test COMMAND SimulateurDiffusion)
@@ -29,6 +29,7 @@ add_executable(UnitTests
     Problem.cpp            # Ajout de Problem.cpp
     Equation.cpp           # Ajout de Equation.cpp
     UniformMesh.cpp        # Ajout de UniformMesh.cpp
+    Timer.cpp 
 )
 
 # Lier GTest et les bibliothèques nécessaires à UnitTests
@@ -37,4 +38,9 @@ target_link_libraries(UnitTests gtest gtest_main pthread)
 # Ajout de gtest_discover_tests pour détecter les tests avec ctest
 include(GoogleTest)
 gtest_discover_tests(UnitTests)
+find_package(Threads REQUIRED)
+
+# Lier la bibliothèque de threads à votre exécutable
+target_link_libraries(SimulateurDiffusion Threads::Threads)
+
 

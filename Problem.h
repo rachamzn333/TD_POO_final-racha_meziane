@@ -12,6 +12,8 @@ public:
     ~Problem();
 
     void solve();
+    void solve_parallel();  // Déclaration de la méthode parallèle
+
 
 private:
     IMesh* mesh;
